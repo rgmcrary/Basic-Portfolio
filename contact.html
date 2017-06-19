@@ -5,42 +5,69 @@
     <title>Rich McRary</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
-    <header>
+    <div class="header-line">
+        <div class="header-area">
+            <header>
+                <h1 class="name">Rich McRary</h1>
+            </header>
 
-        <h1>Rich McRary</h1>
+            <nav>
+                <a class="nav-link" href="index.html" title="About">About</a>
+                <a class="nav-link" href="portfolio.html" title="Portfolio">Portfolio</a>
+                <a class="nav-link" href="contact.html" title="Contact">Contact</a>
+            </nav>
+        </div>
+    </div>
+    <div class="content-area">
+        <section>
+            <article class="about-me">
+                <h1 class="article-heading">Contact</h1>
+                <hr class="bio-divider"></hr>
+                <form class="contact-text" action="/action_page.php">
+                    Name
+                    <br>
+                    <input type="text">
+                    <br><br> 
+                    Email
+                    <br>
+                    <input type="email" name="email">
+                    <br><br> 
+                    Message
+                    <br>
+                    <textarea class="message-input"></textarea>
+                    <br><br>
+                    <input class="submit-button" type="submit" value="Submit">
+                </form>
+            </article>
 
-    </header>
-
-    <nav>
-        <a href="index.html" title="About">About</a>
-        <a href="portfolio.html" title="Portfolio">Portfolio</a>
-        <a href="contact.html" title="Contact">Contact</a>
-    </nav>
-
-    <form>
-        <article>
-            <h1></h1>
-
-            
-
-        </article>
-    </form>
-
-    <aside>
-        <h3>Connect with Me</h3>
-
-        <a href="https://github.com/rgmcrary?tab=repositories" target=_blank><img src="assets/images/github_icon.png" alt="Github"></a>
-        <a href="https://www.linkedin.com/in/rich-mcrary-869648a/" target=_blank><img src="assets/images/linkedin_icon.png" alt="LinkedIn"></a>
-        <a href="https://stackoverflow.com/users/7834633/rich-mcrary" target=_blank><img src="assets/images/stackoverflow_icon.png" alt="Stack Overflow"></a>
-
-    </aside>
-
-
-    <footer>&copy; Copyright 2017 Rich McRary</footer>
+            <aside class="aside">
+                <h3>Connect with Me</h3>
+                <hr class="connect-divider"></hr>
+                <div class="img__wrap">
+                    <a href="https://github.com/rgmcrary?tab=repositories" target=_blank><img class="connect-image-github" src="assets/images/github_icon.png" alt="Github"></a>
+                    <p class="img__description">Github</p>
+                </div>
+                <div class="img__wrap">
+                    <a href="https://www.linkedin.com/in/rich-mcrary-869648a/" target=_blank><img class="connect-image-linkedin" src="assets/images/linkedin_icon.png" alt="LinkedIn"></a>
+                    <p class="img__description">LinkedIn</p>
+                </div>
+                <div class="img__wrap">
+                    <a href="https://stackoverflow.com/users/7834633/rich-mcrary" target=_blank><img class="connect-image-stack" src="assets/images/stackoverflow_icon.png" alt="Stack Overflow"></a>
+                    <p class="img__description">Stack Overflow</p>
+                </div>
+            </aside>
+        </section>
+    </div>
+    <div>
+        <footer>
+            <span class="copyright">&copy; Copyright 2017 Rich McRary</span>
+        </footer>
+    </div>
 
 </body>
 
