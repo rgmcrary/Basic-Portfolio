@@ -67,6 +67,8 @@ nav {
 
 .nav-link:hover {
     background-color: #aeb2b2;
+    color: #4aaaa5;
+    font-weight: bold;
 }
 
 section {
@@ -190,7 +192,7 @@ h3 {
 footer {
     background-color: #666666;
     color: #aeb2b2;
-    position: absolute;
+    position: relative;
     left: 0;
     bottom: 0;
     height: 84px;
